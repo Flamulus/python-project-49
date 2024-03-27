@@ -12,3 +12,7 @@
 ## Demonstration of game No. 2 - "Calculator"
 
 [![asciicast](https://asciinema.org/a/bjH95yQ8pr2YDucI0JGT8fPxy.svg)](https://asciinema.org/a/bjH95yQ8pr2YDucI0JGT8fPxy)
+
+## Demonstration of game No. 3 - "GCD"
+
+[![asciicast](https://asciinema.org/a/zfn1UZ7biJpzld8eGq4Df7lMJ.svg)](https://asciinema.org/a/zfn1UZ7biJpzld8eGq4Df7lMJ)

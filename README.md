@@ -16,3 +16,7 @@
 ## Demonstration of game No. 3 - "GCD"
 
 [![asciicast](https://asciinema.org/a/zfn1UZ7biJpzld8eGq4Df7lMJ.svg)](https://asciinema.org/a/zfn1UZ7biJpzld8eGq4Df7lMJ)
+
+## Demonstration of game No. 4 - "Arithmetic progression"
+
+[![asciicast](https://asciinema.org/a/6W5rrTTY7ubxIKpw65XAX7uKj.svg)](https://asciinema.org/a/6W5rrTTY7ubxIKpw65XAX7uKj)

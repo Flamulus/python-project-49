@@ -12,18 +12,18 @@ from brain_games.games.communication import (
 
 def get_rate_answer(question, сorrect_answer, rounds_count, name):
     answer = get_answer(question)
-    
+
     if answer == str(сorrect_answer):
         successful_solution()
-        rounds_count += 1  
+        rounds_count += 1
     else:
         wrong_decision(answer, сorrect_answer, name)
         rounds_count = 0
-    
+
     return rounds_count
 
 
-def base_game(game_condition:str, game_mechanics):
+def base_game(game_condition: str, game_mechanics):
     сolor_palette_config()
     welcome_user()
     name = get_user_name()

@@ -1,12 +1,11 @@
 import random
 
 from brain_games.games.config import (
-    MAX_NUMBER_ROUND, 
-    MIN_RANGE_VALUE, 
-    MAX_RANGE_VALUE 
+    MAX_NUMBER_ROUND,
+    MIN_RANGE_VALUE,
+    MAX_RANGE_VALUE
 )
 from brain_games.games.base import base_game, get_rate_answer
-from brain_games.games.communication import get_answer
 
 
 def game_mechanics(name):
@@ -14,30 +13,21 @@ def game_mechanics(name):
 
     while rounds_count < MAX_NUMBER_ROUND:
         number = random.randint(MIN_RANGE_VALUE, MAX_RANGE_VALUE)
-        
-        сorrect_answer = "yes" if number % 2 == 0 else "no"
 
+        сorrect_answer = "yes" if number % 2 == 0 else "no"
 
         rounds_count = get_rate_answer(
             question=f"Question: {number}",
-            сorrect_answer=сorrect_answer, 
+            сorrect_answer=сorrect_answer,
             rounds_count=rounds_count,
             name=name
-            )
-
-        # answer = get_answer(question=f"Question: {number}")
-        # rounds_count = get_invoice(
-        #     answer=answer, 
-        #     сorrect_answer=сorrect_answer, 
-        #     rounds_count=rounds_count,
-        #     name=name
-        #     )
-
+        )
 
 
 def launch_game_parity_check():
     base_game(
-        game_condition='Answer "yes" if the number is even, otherwise answer "no".',
+        game_condition='Answer "yes" if the number is'
+        'even, otherwise answer "no".',
         game_mechanics=game_mechanics
     )
 
@@ -47,9 +37,9 @@ def launch_game_parity_check():
 # from colorama import init, Fore
 
 # from brain_games.games.config import (
-#     MAX_NUMBER_ROUND, 
-#     MIN_RANGE_VALUE, 
-#     MAX_RANGE_VALUE 
+#     MAX_NUMBER_ROUND,
+#     MIN_RANGE_VALUE,
+#     MAX_RANGE_VALUE
 # )
 
 

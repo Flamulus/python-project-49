@@ -1,17 +1,16 @@
 import random
 
 from brain_games.games.config import (
-    MAX_NUMBER_ROUND, 
-    MIN_RANGE_VALUE, 
-    MAX_RANGE_VALUE 
+    MAX_NUMBER_ROUND,
+    MIN_RANGE_VALUE,
+    MAX_RANGE_VALUE
 )
 from brain_games.games.base import base_game, get_rate_answer
-from brain_games.games.communication import get_answer
 
 
 def game_mechanics(name):
     rounds_count = 0
-    
+
     while rounds_count < MAX_NUMBER_ROUND:
         first_number = random.randint(MIN_RANGE_VALUE, MAX_RANGE_VALUE)
         second_number = random.randint(MIN_RANGE_VALUE, MAX_RANGE_VALUE)
@@ -27,10 +26,10 @@ def game_mechanics(name):
 
         rounds_count = get_rate_answer(
             question=f"{first_number} {operator} {second_number}",
-            сorrect_answer=сorrect_answer, 
+            сorrect_answer=сorrect_answer,
             rounds_count=rounds_count,
             name=name
-            )        
+        )
 
 
 def launch_game_calc():
@@ -45,12 +44,12 @@ def launch_game_calc():
 # from colorama import init, Fore
 
 # from brain_games.games.config import (
-#     MAX_NUMBER_ROUND, 
-#     MIN_RANGE_VALUE, 
-#     MAX_RANGE_VALUE 
+#     MAX_NUMBER_ROUND,
+#     MIN_RANGE_VALUE,
+#     MAX_RANGE_VALUE
 # )
-    
-    
+
+
 # def launch_game_calc_old():
 #     rounds_count = 0
 

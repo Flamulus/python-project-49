@@ -3,4 +3,12 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/29763a990d5da67f8f7e/maintainability)](https://codeclimate.com/github/Flamulus/python-project-49/maintainability)
 
+
+## Demonstration of game No. 1 - "Parity check"
+
 [![asciicast](https://asciinema.org/a/Q5zISMSST9WA5liiPaQcKiFdv.svg)](https://asciinema.org/a/Q5zISMSST9WA5liiPaQcKiFdv)
+
+
+## Demonstration of game No. 2 - "Calculator"
+
+[![asciicast](https://asciinema.org/a/bjH95yQ8pr2YDucI0JGT8fPxy.svg)](https://asciinema.org/a/bjH95yQ8pr2YDucI0JGT8fPxy)

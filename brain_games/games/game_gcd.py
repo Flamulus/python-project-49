@@ -30,6 +30,9 @@ def game_mechanics(name):
             name=name
         )
 
+        if rounds_count == 0:
+            raise SystemExit
+
 
 def launch_game_gcd():
     base_game(

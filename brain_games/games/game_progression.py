@@ -25,14 +25,14 @@ def game_mechanics(name):
             sequence.append(number)
 
         index = random.randint(0, len(sequence) - 1)
-        сorrect_answer = sequence[index]
+        correct_answer = sequence[index]
         sequence[index] = ".."
         str_numbers = [str(n) for n in sequence]
         question = " ".join(str_numbers)
 
         rounds_count = get_rate_answer(
             question=question,
-            сorrect_answer=сorrect_answer,
+            correct_answer=correct_answer,
             rounds_count=rounds_count,
             name=name
         )

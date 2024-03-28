@@ -18,15 +18,15 @@ def game_mechanics(name):
 
         match operator:
             case "+":
-                сorrect_answer = first_number + second_number
+                correct_answer = first_number + second_number
             case "-":
-                сorrect_answer = first_number - second_number
+                correct_answer = first_number - second_number
             case "*":
-                сorrect_answer = first_number * second_number
+                correct_answer = first_number * second_number
 
         rounds_count = get_rate_answer(
             question=f"{first_number} {operator} {second_number}",
-            сorrect_answer=сorrect_answer,
+            correct_answer=correct_answer,
             rounds_count=rounds_count,
             name=name
         )

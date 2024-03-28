@@ -14,11 +14,11 @@ def game_mechanics(name):
     while rounds_count < MAX_NUMBER_ROUND:
         number = random.randint(MIN_RANGE_VALUE, MAX_RANGE_VALUE)
 
-        сorrect_answer = "yes" if number % 2 == 0 else "no"
+        correct_answer = "yes" if number % 2 == 0 else "no"
 
         rounds_count = get_rate_answer(
             question=f"Question: {number}",
-            сorrect_answer=сorrect_answer,
+            correct_answer=correct_answer,
             rounds_count=rounds_count,
             name=name
         )

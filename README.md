@@ -20,3 +20,7 @@
 ## Demonstration of game No. 4 - "Arithmetic progression"
 
 [![asciicast](https://asciinema.org/a/6W5rrTTY7ubxIKpw65XAX7uKj.svg)](https://asciinema.org/a/6W5rrTTY7ubxIKpw65XAX7uKj)
+
+## Demonstration of game No. 5 - "Is it a prime number?"
+
+[![asciicast](https://asciinema.org/a/ZRrAZNkbJGZcOgyxJg8fHbfta.svg)](https://asciinema.org/a/ZRrAZNkbJGZcOgyxJg8fHbfta)

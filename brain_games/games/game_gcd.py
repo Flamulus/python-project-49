@@ -15,17 +15,17 @@ def game_mechanics(name):
         first_number = random.randint(MIN_RANGE_VALUE, MAX_RANGE_VALUE)
         second_number = random.randint(MIN_RANGE_VALUE, MAX_RANGE_VALUE)
 
-        сorrect_answer = min(first_number, second_number)
+        correct_answer = min(first_number, second_number)
 
-        while сorrect_answer != 1:
-            if (first_number % сorrect_answer == 0
-                    and second_number % сorrect_answer == 0):
+        while correct_answer != 1:
+            if (first_number % correct_answer == 0
+                    and second_number % correct_answer == 0):
                 break
-            сorrect_answer -= 1
+            correct_answer -= 1
 
         rounds_count = get_rate_answer(
             question=f"{first_number} {second_number}",
-            сorrect_answer=сorrect_answer,
+            correct_answer=correct_answer,
             rounds_count=rounds_count,
             name=name
         )

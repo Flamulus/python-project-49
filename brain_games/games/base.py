@@ -10,14 +10,14 @@ from brain_games.games.communication import (
 )
 
 
-def get_rate_answer(question, сorrect_answer, rounds_count, name):
+def get_rate_answer(question, correct_answer, rounds_count, name):
     answer = get_answer(question)
 
-    if answer == str(сorrect_answer):
+    if answer == str(correct_answer):
         successful_solution()
         rounds_count += 1
     else:
-        wrong_decision(answer, сorrect_answer, name)
+        wrong_decision(answer, correct_answer, name)
         rounds_count = 0
 
     return rounds_count

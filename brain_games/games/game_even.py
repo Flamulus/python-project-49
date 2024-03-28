@@ -24,7 +24,7 @@ def game_mechanics(name):
         )
 
         if rounds_count == 0:
-            raise SystemExit
+            return
 
 
 def launch_game_parity_check():

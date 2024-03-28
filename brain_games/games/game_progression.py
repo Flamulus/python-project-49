@@ -38,12 +38,12 @@ def game_mechanics(name):
         )
 
         if rounds_count == 0:
-            raise SystemExit
+            return
 
 
 def launch_game_progression():
     base_game(
-        game_condition='Find the greatest common'
-        ' divisor of given numbers.',
+        game_condition='What number is missing '
+        'in the progression?',
         game_mechanics=game_mechanics
     )

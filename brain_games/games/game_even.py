@@ -26,7 +26,7 @@ def game_mechanics(name):
 
 def launch_game_parity_check():
     base_game(
-        game_condition='Answer "yes" if the number is'
+        game_condition='Answer "yes" if the number is '
         'even, otherwise answer "no".',
         game_mechanics=game_mechanics
     )

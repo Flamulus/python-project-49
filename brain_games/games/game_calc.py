@@ -1,23 +1,18 @@
 import random
+from operator import add, sub, mul
 
 
 GAME_CONDITION = 'What is the result of the expression?'
-MIN_RANGE_VALUE, MAX_RANGE_VALUE = 0, 12
+OPERATORS = [("+", add), ("-", sub), ("*", mul)]
 
 
-def game_result():
-    first_number = random.randint(MIN_RANGE_VALUE, MAX_RANGE_VALUE)
-    second_number = random.randint(MIN_RANGE_VALUE, MAX_RANGE_VALUE)
-    operator = random.choice(["+", "-", "*"])
+def get_game_result():
+    min_range_value, max_range_value = 0, 12
+    first_number = random.randint(min_range_value, max_range_value)
+    second_number = random.randint(min_range_value, max_range_value)
+    operator, mat_function = random.choice(OPERATORS)
 
     question = f"{first_number} {operator} {second_number}"
+    correct_answer = mat_function(first_number, second_number)
 
-    match operator:
-        case "+":
-            correct_answer = first_number + second_number
-        case "-":
-            correct_answer = first_number - second_number
-        case "*":
-            correct_answer = first_number * second_number
-
-    return (question, str(correct_answer))
+    return question, str(correct_answer)

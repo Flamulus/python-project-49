@@ -1,17 +1,16 @@
 import random
 
+
 GAME_CONDITION = 'What number is missing in the progression?'
-MIN_RANGE_VALUE, MAX_RANGE_VALUE = 1, 12
-MIN_PROGRESSION_LENGHT, MAX_PROGRESSION_LENGHT = 5, 10
 
 
-def game_result():
-    sequence = [random.randint(MIN_RANGE_VALUE, MAX_RANGE_VALUE)]
-    step = random.randint(MIN_RANGE_VALUE, MAX_RANGE_VALUE)
-    for i in range(1, random.randint(MIN_PROGRESSION_LENGHT,
-                                     MAX_PROGRESSION_LENGHT)):
-        number = sequence[i - 1] + step
-        sequence.append(number)
+def get_game_result():
+    min_rnage_value, max_range_value = 1, 12
+    min_progression_lenght, max_progression_lenght = 5, 10
+    start = random.randint(min_rnage_value, max_range_value)
+    step = random.randint(min_progression_lenght, max_progression_lenght)
+    stop = random.randint(start + step, start + 10 * step)
+    sequence = list(range(start, stop, step))
 
     index = random.randint(0, len(sequence) - 1)
     correct_answer = sequence[index]
@@ -19,4 +18,4 @@ def game_result():
     str_numbers = [str(n) for n in sequence]
     question = " ".join(str_numbers)
 
-    return (question, str(correct_answer))
+    return question, str(correct_answer)

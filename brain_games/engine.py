@@ -12,7 +12,7 @@ def run_game(modul, number_round=3):
 
     rounds_count = 0
     while rounds_count < number_round:
-        question, correct_answer = modul.game_result()
+        question, correct_answer = modul.get_game_result()
         print(Fore.BLUE + f"Question: {question}")
         answer = prompt.string("Your answer: ")
 

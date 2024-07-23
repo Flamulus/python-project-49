@@ -2,16 +2,21 @@ import random
 
 
 GAME_CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-MIN_PRIME_NUMBERS, MAX_PRIME_NUMBERS = 2, 101
 
 
-def game_result():
-    prime_number = random.randint(MIN_PRIME_NUMBERS, MAX_PRIME_NUMBERS)
-    correct_answer = "yes"
-    question = prime_number
+def is_prime_number(number):
+    min_prime_number = 2
+    for n in range(min_prime_number, number // 2 + 1):
+        if number % n == 0:
+            return False
+    return True
 
-    for n in range(MIN_PRIME_NUMBERS, prime_number // 2 + 1):
-        if prime_number % n == 0:
-            correct_answer = "no"
-            break
-    return (question, str(correct_answer))
+
+def get_game_result():
+    min_prime_number, max_prime_number = 2, 101
+    number = random.randint(min_prime_number, max_prime_number)
+
+    question = number
+    correct_answer = "yes" if is_prime_number(number) else "no"
+
+    return question, str(correct_answer)

@@ -9,7 +9,8 @@ def get_game_result():
     min_progression_lenght, max_progression_lenght = 5, 10
     start = random.randint(min_rnage_value, max_range_value)
     step = random.randint(min_progression_lenght, max_progression_lenght)
-    stop = random.randint(start + step, start + 10 * step)
+    stop = random.randint(start + min_progression_lenght * step,
+                          start + max_progression_lenght * step)
     sequence = list(range(start, stop, step))
 
     index = random.randint(0, len(sequence) - 1)
